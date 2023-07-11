@@ -51,6 +51,7 @@ public class CalculateTaxFor$0Def {
 
     @When("User Calculate income for ${double}")
     public void userCalculateIncomeFor$(double income) {
+
         this.taxCalPage.calculate(income);
     }
 

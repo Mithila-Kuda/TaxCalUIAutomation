@@ -36,8 +36,8 @@ public class SauceLabController implements WebDriverController{
         browserOptions.setPlatformName("Windows 11");
         browserOptions.setBrowserVersion("latest");
         Map<String, Object> sauceOptions = new HashMap<>();
-        sauceOptions.put("username", "oauth-mithilakaluarachchi-ab5b7");
-        sauceOptions.put("accessKey", "a5270de3-22a4-4967-b539-38edb89dd088");
+        sauceOptions.put("username", "oauth-mclicks.photo-7030e");
+        sauceOptions.put("accessKey", "cc3d88ee-8526-486f-a60a-26ad69bc16c0");
         sauceOptions.put("build", "selenium-build-77FVI");
         sauceOptions.put("name", "<your test name>");
         browserOptions.setCapability("sauce:options", sauceOptions);
