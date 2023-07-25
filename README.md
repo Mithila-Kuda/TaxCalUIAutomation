@@ -89,15 +89,29 @@ recently with desktop publishing software like Aldus PageMaker including version
 ## Test Plans
 
 ### Sprint 1
+
+- **Date -** May 22nd, 2023 - June 5th, 2023Date
+
+- **Sprint goal -** MVP: Calculate Income Tax
+
 Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.
 
 ![Test plan Sprint 1](/Assets/Slide2.JPG)
 ### Sprint 2
+
+- **Date -** June 5th, 2023 - June 19th, 2023
+
+- **Sprint goal -** do all the component testing, do all the API testing, manage time properly this time.
+
 Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.
 
 ![Test plan Sprint 1](/Assets/Slide3.JPG)
 
 ### Sprint 3
+
+- **Date -** June 19th, 2023 - July 3rd, 2023
+- **Sprint goal** - Automate the UI testing using Selenium Finish testing on Tax Calculator
+
 Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.
 
 ![Test plan Sprint 1](/Assets/Slide4.JPG)
@@ -115,8 +129,8 @@ Test analysis and design
 : 
 
 - [**Income Tax Calculation-UI**-Test analysis and design](https://docs.google.com/document/d/1RmNcYZimInADYbaS5WCcUtNw1NeDR47olZXLoImyVE8/edit)
-- [**Income Tax Calculation-UI**-Test analysis and design](https://docs.google.com/document/d/1RmNcYZimInADYbaS5WCcUtNw1NeDR47olZXLoImyVE8/edit)
-- [**Income Tax Calculation-UI**-Test analysis and design](https://docs.google.com/document/d/1RmNcYZimInADYbaS5WCcUtNw1NeDR47olZXLoImyVE8/edit)
+- [**Income Tax Calculation-API**-Test analysis and design](https://docs.google.com/document/d/1RmNcYZimInADYbaS5WCcUtNw1NeDR47olZXLoImyVE8/edit)
+- [**Income Tax Calculation-Integration**-Test analysis and design](https://docs.google.com/document/d/1RmNcYZimInADYbaS5WCcUtNw1NeDR47olZXLoImyVE8/edit)
 
 # AGILE METRICS
 
