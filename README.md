@@ -3,6 +3,7 @@
 - [TEST APPROACH](#test-approach)
   - [TEST LEVELS](#test-levels)
     - [UNIT TESTING](#unit-testing)
+    - [In]
 
 - [TEST MANAGEMENT](#test-management)
 - [AGILE METRICS](#agile-metrics)
@@ -12,8 +13,8 @@
 # PROJECT DESCRIPTION
 
 <div style="display: flex; justify-content: center;">
-    <img src="Assets/jenkins8460.jpg" alt="Image 2" style="max-height: 100px; margin: 5px;">
-    <img src="Assets/postman.png" alt="Image 3" style="max-height: 100px; margin: 5px;">
+    <img src="Assets/jenkins8460.jpg" alt="Image 2" style="height: 100px; margin: 5px;">
+   
 </div>
 
 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
