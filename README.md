@@ -13,7 +13,13 @@
 # PROJECT DESCRIPTION
 
 <div style="display: flex; justify-content: center;">
-    <img src="Assets/jenkins8460.jpg" alt="Image 2" style="height: 100px; margin: 5px;">
+<img src="Assets/atlassian_jira-ar21.png" alt="Image 2" style="max-height: 80px; margin: 1px;">
+    <img src="Assets/jenkins8460.jpg" alt="Image 2" style="max-height: 80px; margin: 1px;">
+ <img src="Assets/postman-inc-logo-vector.png" alt="Image 2" style="max-height: 80px; margin: 1px;">
+ <img src="Assets/selenium.png" alt="Image 2" style="max-height: 80px; margin: 1px;">
+ <img src="Assets/axe-rebrand.png" alt="Image 2" style="max-height: 80px; margin: 1px;">
+<img src="Assets/0_6T0D8OjInvZhyHDE.png" alt="Image 2" style="max-height: 80px; margin: 1px;">
+
    
 </div>
 
