@@ -16,16 +16,21 @@
 
 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
 
+Tools used
+: JIRA | IntelliJ | Postman | Selenium | Cucumber | AxeDev | 
+
 <div style="display: flex; justify-content: center;">
 <img src="Assets/atlassian_jira-ar21.png" alt="Image 2" style="height: 50px; margin: 0px;">
-    <img src="Assets/jenkins8460.jpg" alt="Image 2" style="height: 50px; margin: 0px;">
- <img src="Assets/postman-inc-logo-vector.png" alt="Image 2" style="height: 50px; margin: 0px;">
- <img src="Assets/selenium.png" alt="Image 2" style="height: 50px; margin: 0px;">
- <img src="Assets/axe-rebrand.png" alt="Image 2" style="height: 50px; margin: 0px;">
-<img src="Assets/0_6T0D8OjInvZhyHDE.png" alt="Image 2" style="height: 50px; margin: 0px;">
+  <img src="Assets/IntelliJ_IDEA_Icon.svg.png" alt="Image 2" style="height: 50px; margin: 0px;">
+  <img src="Assets/jenkins8460.jpg" alt="Image 2" style="height: 50px; margin: 0px;">
+  <img src="Assets/postman-inc-logo-vector.png" alt="Image 2" style="height: 50px; margin: 0px;">
+  <img src="Assets/selenium.png" alt="Image 2" style="height: 50px; margin: 0px;">
+  <img src="Assets/axe-rebrand.png" alt="Image 2" style="height: 50px; margin: 0px;">
+  <img src="Assets/0_6T0D8OjInvZhyHDE.png" alt="Image 2" style="height: 50px; margin: 0px;">
 
 
 </div>
+
 # TEST APPROACH
 
 ## TEST LEVELS
