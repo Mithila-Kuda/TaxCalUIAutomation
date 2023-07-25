@@ -20,13 +20,16 @@ Tools used
 : JIRA | IntelliJ | Postman | Selenium | Cucumber | AxeDev | 
 
 <div style="display: flex; justify-content: center;">
-<img src="Assets/atlassian_jira-ar21.png" alt="Image 2" style="height: 50px; margin: 0px;">
-  <img src="Assets/IntelliJ_IDEA_Icon.svg.png" alt="Image 2" style="height: 50px; margin: 0px;">
-  <img src="Assets/jenkins8460.jpg" alt="Image 2" style="height: 50px; margin: 0px;">
-  <img src="Assets/postman-inc-logo-vector.png" alt="Image 2" style="height: 50px; margin: 0px;">
-  <img src="Assets/selenium.png" alt="Image 2" style="height: 50px; margin: 0px;">
+<img src="Assets/atlassian_jira-ar21.png" alt="Image 2" style="height: 60px; margin: 0px;">
+  <img src="Assets/IntelliJ_IDEA_Icon.svg.png" alt="Image 2" style="height: 60px; margin: 0px;">
+ <img src="Assets/postman-inc-logo-vector.png" alt="Image 2" style="height: 60px; margin: 0px;">
+<img src="Assets/selenium.png" alt="Image 2" style="height: 60px; margin: 0px;">
+  <img src="Assets/0_6T0D8OjInvZhyHDE.png" alt="Image 2" style="height: 60px; margin: -1px;">
+  <img src="Assets/jenkins8460.jpg" alt="Image 2" style="height: 60px; margin: -1px;">
+ 
+  
   <img src="Assets/axe-rebrand.png" alt="Image 2" style="height: 50px; margin: 0px;">
-  <img src="Assets/0_6T0D8OjInvZhyHDE.png" alt="Image 2" style="height: 50px; margin: 0px;">
+
 
 
 </div>
