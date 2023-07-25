@@ -12,7 +12,7 @@
 # PROJECT DESCRIPTION
 
 <div style="display: flex; justify-content: center;">
-    <img src="/Assets/Selenium_logo.svg.png" alt="Image 1" style="max-height: 200px; margin: 5px;">
+    <img src="Assets/62a9ad4c8ff6441a2952dab8.png" alt="Image 1" style="max-height: 100px; margin: 5px;">
     <img src="Assets/jenkins8460.jpg" alt="Image 2" style="max-height: 100px; margin: 5px;">
     <img src="Assets/postman.png" alt="Image 3" style="max-height: 100px; margin: 5px;">
 </div>
