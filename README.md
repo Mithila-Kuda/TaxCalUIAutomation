@@ -7,6 +7,13 @@
         - [INTEGRATION TESTING](#integration-testing)
         - [SYSTEM TESTING](#system-testing)
 - [TEST MANAGEMENT](#test-management)
+    - [JIRA AND ZEPHYR SCALE](#jira--zephyr-scale)
+    - [TEST PLANS](#test-plans)
+        - [Sprint 1](#sprint-1)
+        - [Sprint 2](#sprint-2)
+        - [Sprint 3](#sprint-3)
+    - [TEST ARTIFACTS](#test-artifacts)
+       
 - [AGILE METRICS](#agile-metrics)
 - [DEFECT MANAGEMENT](#defect-management)
 
@@ -30,6 +37,7 @@ Tax Calculator is a user-friendly and efficient web-based application designed t
      <img src="Assets/axe-rebrand.png" alt="Image 2" style="height: 60px; margin: 0px;">
 </div>
 
+<!-- ----------------------------------------------------------------------------------------------------------------- -->
 
 
 # TEST APPROACH
@@ -216,6 +224,9 @@ Test different branches and decision points in the code to ensure that all possi
 Check if conditional statements, loops, and logical operators are adequately tested to cover both true and false conditions.
 
 
+
+<!-- ----------------------------------------------------------------------------------------------------------------- -->
+
 # TEST MANAGEMENT
 
 ## JIRA & Zephyr scale
@@ -223,34 +234,101 @@ Check if conditional statements, loops, and logical operators are adequately tes
 ## Test Plans
 
 ### Sprint 1
+[Artifacts](#test-artifacts)
+<p align="left">
+  <a href="https://google.com" class="button">Sprint 1 planning Document </a>
+</p>
 
-- **Date -** May 22nd, 2023 - June 5th, 2023Date
+<style>
+.button {
+  display: inline-block;
+  padding: 1px 40px;
+  background-color: #3063af;
+  color: #fff;
+  text-decoration: ;
+  border-radius: 4px;
+}
+</style>
 
-- **Sprint goal -** MVP: Calculate Income Tax
+- **Date -** May 22nd, 2023 - June 5th, 2023
 
-Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.
+- **Sprint goal -** Develop components which required for MVP Tax Calculation
 
-![Test plan Sprint 1](/Assets/Slide2.JPG)
+
+During the initial sprint 1, the development was creating components that helps the MVP of the tax calculator. This includes designing and implementing key components such as the income input field, summary report display, calculate button, and an error message mechanism. The income input field will allow user to provide their income, while the summary report display the Tax to paid and the correct Tax bracket in understandable format. The calculate button will call the API and continue the tax calculating formula, to deliver an accurate outcome. To ensure a user-friendly experience, an error handling message component will be established, promptly notifying users of any input mistakes or issues.
+
+Sprint guided by the development team's, Rafael, the Developer. The collaboration of Mithila, Amila and Dinuka, Testers, provided valuable insights during the testing phase, ensuring that mentioned components seamlessly present according to the clients requirements. While the primary objective of this sprint is to establish the foundation of the application, considerations for interaction with API, accuracy and error handling proceeded in next sprint. As the sprint progresses, the development team will look into adhering to the project's scope and requirements, striving for a successful tax calculating application.
+
+
+>Note:<br/>
+> Main focus was to develop and test UI components
+>  - Income input field
+>  - Calculate button
+>  - Summary report
+>  - Error message
+
 ### Sprint 2
+[Artifacts](#test-artifacts)
 
+<p align="left">
+  <a href="https://google.com" class="button">Sprint 2 planning Document </a>
+</p>
+
+<style>
+.button {
+  display: inline-block;
+  padding: 1px 40px;
+  background-color: #3063af;
+  color: #fff;
+  text-decoration: ;
+  border-radius: 4px;
+}
+</style>
 - **Date -** June 5th, 2023 - June 19th, 2023
 
-- **Sprint goal -** do all the component testing, do all the API testing, manage time properly this time.
+- **Sprint goal -** Execute the remaining component testing diligently, conduct API testing, and implement effective time management practices.
 
-Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.
 
-![Test plan Sprint 1](/Assets/Slide3.JPG)
+During the sprint 2, the main focus was on developing and rigorously testing a tax calculation API to deliver accurate tax estimations according to the income provided. The API's functionality, including retrieving tax brackets, tax to be paid and ensuring secure communication via HTTPS. Thorough testing by a collaborative team, with Rafael leading as the Developer, addressed key aspects such as behavior validation, load, and error handling. As a tester myself and other testers Amila, and Dinuka, played a significant role in identifying defects, vulnerabilities, and accuracy of tax calculations.
+The sprint's successful outcome showcased the team's dedication to building a robust API and also marked a significant step after developed the API as the requirements with a reliable and accurate tax calculation formula, leaving for further development and refinement.
+
+>Note:<br/>
+> Main focus was to retrieve 
+>  - Retrieving Tax brackets
+>  - Find Tax bracket
+>  - Tax amount when income given 
 
 ### Sprint 3
+[Artifacts](#test-artifacts)
 
 - **Date -** June 19th, 2023 - July 3rd, 2023
-- **Sprint goal** - Automate the UI testing using Selenium Finish testing on Tax Calculator
+- **Sprint goal** - Utilize Selenium, Cucumber for automating UI testing, ensuring seamless completion of testing for to deploy Tax Calculator application.
 
-Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.
+During the Sprint 3 our focus shifted to Tax Calculator UI testing and its relevant automation. Our main focus was carefully checking that the tax calculator shown on the screen were correct in all perspective, making sure the user interface worked well, was easy to use and delivering the right results. This helped make the Tax Calculator better for people using it. We were the same team guided by Rafael's developmental leadership and with testers Mithila, Amila, and Dinuka, we made sure a bug free final product.
 
-![Test plan Sprint 1](/Assets/Slide4.JPG)
+This sprint full filled with rigorous testing, advanced tools, and dynamic environments. By using Selenium, Cucumber, Jenkins alongside development, testing, we were able to simulated real-world scenarios easier as well as continues testing, ensuring the application's reliability. Sprint 3 showed how well we worked together as a team and made big progress in making the Tax Calculator bug-free paying a lot of attention to how it looks and works for users.
 
-#### Test Artifacts
+
+
+## Test Artifacts
+>Note:<br/>
+> The collected test artifacts throughout the development of the Tax Calculator spanned across Sprint 1, 2, and 3.
+
+
+Test plans and Impact analysis 
+: 
+
+- [Impact Analysis]()
+- [**Sprint 1:** Test plan]()
+- [**Sprint 2:** Test plan]()
+- [**Sprint 3:** Test plan]()
+
+Test analysis and design
+: 
+
+- [Income Tax Calculation-UI-Test analysis and design](https://docs.google.com/document/d/1RmNcYZimInADYbaS5WCcUtNw1NeDR47olZXLoImyVE8/edit)
+- [Income Tax Calculation-API-Test analysis and design](https://docs.google.com/document/d/1RmNcYZimInADYbaS5WCcUtNw1NeDR47olZXLoImyVE8/edit)
+- [Income Tax Calculation-System-Test analysis and design](https://docs.google.com/document/d/1RmNcYZimInADYbaS5WCcUtNw1NeDR47olZXLoImyVE8/edit)
 
 Test suits
 : 
@@ -259,24 +337,35 @@ Test suits
 - [API Test Suit](https://techdojob2.atlassian.net/projects/QTC?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page#!/v2/testCases?projectId=10003)
 - [System Test Suit](https://techdojob2.atlassian.net/projects/QTC?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page#!/v2/testCases?projectId=10003)
 
-Test analysis and design
-: 
 
-- [**Income Tax Calculation-UI**-Test analysis and design](https://docs.google.com/document/d/1RmNcYZimInADYbaS5WCcUtNw1NeDR47olZXLoImyVE8/edit)
-- [**Income Tax Calculation-API**-Test analysis and design](https://docs.google.com/document/d/1RmNcYZimInADYbaS5WCcUtNw1NeDR47olZXLoImyVE8/edit)
-- [**Income Tax Calculation-Integration**-Test analysis and design](https://docs.google.com/document/d/1RmNcYZimInADYbaS5WCcUtNw1NeDR47olZXLoImyVE8/edit)
 
+<!-- ----------------------------------------------------------------------------------------------------------------- -->
 # AGILE METRICS
 
-![Burndownchart](/Assets/IH_Dynamic_Status_Update_2023-07-24_21_29.png)
-![Burndownchart](/Assets/IH_Dynamic_Status_Update_2023-07-24_21_30.png)
+In our agile work process, we initially planned for 15 points which covered tasks related to setting up the Tax Calculator UI, Tax Calculator API, and Tax Calculator System. However, due to some issues in estimating the work and the fact that most of us are new to the team, we faced delays and had tasks piling up. By the end of the first sprint, we couldn't complete all the planned work as expected.
 
+To handle this, we made smart changes for the next sprint. We focused on UI and API tasks, giving them a total of 10 points, while we left the 'System' task for the third sprint. In the second sprint, we worked hard and accomplished the 10 points we set. Since we had some extra time during the second sprint, we decided to work on the Tax Calculator System story as well, which we decided to do in third sprint. We assigned it 5 points and managed to complete it within the second sprint also while fixing the defects introduced. Then We left the third sprint for automating UI testing.
+
+Our agile approach isn't just about counting points; it's about being adaptable and finding the best ways to work together. We're learning how to handle challenges and make things better as a team, and that's what matters most.
+
+
+>Note:<br/>
+>The following **Burnup reports** provide insights into the progress made during Sprint 1 and Sprint 2.
+These showcase a clear overview of the tasks completed and the accomplishments over each sprint.
+
+![Burndownchart](/Assets/Burnup%20report%20Sprint%201.png)
+![Burndownchart](/Assets/Burnup%20report%20Sprint%202.png)
+<!-- ----------------------------------------------------------------------------------------------------------------- -->
 # DEFECT MANAGEMENT
 
 Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
 
 ![Defect Report](/Assets/Defect%20reporting.png)
 
+<!-- ----------------------------------------------------------------------------------------------------------------- -->
 # TEST EXIT REPORT
 
 At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.
+
+![mtk](https://img.shields.io/badge/Tax_Calculator-Mithila_Kuda-orange) (https://google.com)
+
