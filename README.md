@@ -270,20 +270,7 @@ Sprint guided by the development team's, Rafael, the Developer. The collaboratio
 ### Sprint 2
 [Artifacts](#test-artifacts)
 
-<p align="left">
-  <a href="https://google.com" class="button">Sprint 2 planning Document </a>
-</p>
 
-<style>
-.button {
-  display: inline-block;
-  padding: 1px 40px;
-  background-color: #3063af;
-  color: #fff;
-  text-decoration: ;
-  border-radius: 4px;
-}
-</style>
 - **Date -** June 5th, 2023 - June 19th, 2023
 
 - **Sprint goal -** Execute the remaining component testing diligently, conduct API testing, and implement effective time management practices.
