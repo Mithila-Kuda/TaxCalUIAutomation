@@ -314,7 +314,7 @@ Test analysis and design
 : 
 
 - [Income Tax Calculation-UI-Test analysis and design](https://docs.google.com/document/d/1RmNcYZimInADYbaS5WCcUtNw1NeDR47olZXLoImyVE8/edit)
-- [Income Tax Calculation-API-Test analysis and design](https://docs.google.com/document/d/1RmNcYZimInADYbaS5WCcUtNw1NeDR47olZXLoImyVE8/edit)
+- [Income Tax Calculation-API-Test analysis and design](https://github.com/Mithila-Kuda/TaxCalUIAutomation/blob/main/Assets/Income%20Tax%20Calculation-API-Test%20analysis%20and%20design.pdf)
 - [Income Tax Calculation-System-Test analysis and design](https://docs.google.com/document/d/1RmNcYZimInADYbaS5WCcUtNw1NeDR47olZXLoImyVE8/edit)
 
 Test suits
