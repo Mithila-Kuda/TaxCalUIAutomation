@@ -311,6 +311,23 @@ Test suits
 - [API Test Suit](https://github.com/Mithila-Kuda/TaxCalUIAutomation/blob/main/Assets/API%20test%20cases.png)
 - [System Test Suit](https://github.com/Mithila-Kuda/TaxCalUIAutomation/blob/main/Assets/System%20test%20cases.png)
 
+Test cycles
+: 
+
+- [UI cycle](https://github.com/Mithila-Kuda/TaxCalUIAutomation/blob/main/TestCycles.md#ui)
+- [API cycle](https://github.com/Mithila-Kuda/TaxCalUIAutomation/blob/main/TestCycles.md#api)
+- [System cycle](https://github.com/Mithila-Kuda/TaxCalUIAutomation/blob/main/TestCycles.md#system)
+
+Defect reports
+: 
+
+- [The input field accept multiple decimals]()
+- [The input field accept negative decimals]()
+- [The find tax bracket endpoint did not retrieve tax percentage for minimum income values]()
+- [Negative Input Accepted by Find Tax Bracket Endpoints]()
+- [Negative Input gives internal server error when calculating Tax]()
+- [In the summary report 'Total tax to be paid' display more than two decimal places]()
+- [For the  inserted income '$14,000.50', instead of showing the summary report with the 'Total Tax to be paid', displaying an error message "An error occurred while calculating tax."]()
 
 
 <!-- ----------------------------------------------------------------------------------------------------------------- -->
@@ -331,15 +348,29 @@ These showcase a clear overview of the tasks completed and the accomplishments o
 ![Burnupchart sprint 1](/Assets/Burnup%20report%20Sprint%202.png)
 <!-- ----------------------------------------------------------------------------------------------------------------- -->
 # DEFECT MANAGEMENT
+[Artifacts](#test-artifacts)
 
-Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+For each defect discovered during the development of the Tax Calculator, we followed a consistent and clear reporting format.
 
+>Note:<br/>
+> Consider the following defect
+> 
+>**For the inserted income '$14,000.50', instead of showing the summary report with the 'Total Tax to be paid', displaying an error message "An error occurred while calculating tax."**
+> 
+>To recreate the defect, we began by loading the Tax Calculator application using the provided link (http://24.199.68.169:3000/). Then, in the input field, we entered an income amount of $12345 and proceeded to press the "Calculate Tax" button. Our expected outcome was the display of a summary report showing the correct total tax to be paid, which should have been "$1,470.05".
+<br/>
+<br/>
+However, the actual result differed from our expectations. Instead of the anticipated summary report, an error message appeared on the screen, stating: "An error occurred while calculating tax." This discrepancy between the expected and actual results highlighted a defect in the application's functionality. Our aim in employing this structured reporting approach was to ensure clear communication and documentation of each defect encountered, facilitating effective collaboration and resolution within the development process.
+<br/>
+<br/>
 ![Defect Report](/Assets/Defect%20reporting.png)
 
 <!-- ----------------------------------------------------------------------------------------------------------------- -->
 # TEST EXIT REPORT
-
 At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.
+
+
+
 ![test exit report ](/Assets/screencapture-mail-google-mail-u-0-2023-08-15-02_06_08.png)
 ![mtk](https://img.shields.io/badge/Tax_Calculator-Mithila_Kuda-orange)
 
