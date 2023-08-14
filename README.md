@@ -235,20 +235,7 @@ Check if conditional statements, loops, and logical operators are adequately tes
 
 ### Sprint 1
 [Artifacts](#test-artifacts)
-<p align="left">
-  <a href="https://google.com" class="button">Sprint 1 planning Document </a>
-</p>
 
-<style>
-.button {
-  display: inline-block;
-  padding: 1px 40px;
-  background-color: #3063af;
-  color: #fff;
-  text-decoration: ;
-  border-radius: 4px;
-}
-</style>
 
 - **Date -** May 22nd, 2023 - June 5th, 2023
 

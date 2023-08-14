@@ -1,0 +1,1253 @@
+{
+	"info": {
+		"_postman_id": "e22f52b0-e0af-4a50-98a8-538db1c4b920",
+		"name": "Tax Calculator- API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27364764",
+		"_collection_link": "https://cloudy-firefly-73713.postman.co/workspace/My-Workspace~5cb9caf1-f003-41fe-8600-a3f5c0489dd4/collection/27364764-e22f52b0-e0af-4a50-98a8-538db1c4b920?action=share&creator=27364764&source=collection_link"
+	},
+	"item": [
+		{
+			"name": "Retrieving Tax brackets",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://24.199.68.169:8081/api/taxBrackets",
+					"protocol": "http",
+					"host": [
+						"24",
+						"199",
+						"68",
+						"169"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"taxBrackets"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Validate results from API for finding tax brackets",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"// let currentData = pm.iterationData.toObject();\r",
+							"// pm.variables.set(\"income\", currentData.user_id);\r",
+							"\r",
+							"pm.environment.set(\"income\", pm.iterationData.get(\"income\"));\r",
+							"\r",
+							"// Load the income data from the JSON file\r",
+							"// const data = pm.iterationData.toObject();\r",
+							"\r",
+							"// Set the environment variable \"income\" with the value from the JSON file\r",
+							"// pm.environment.set(\"income\", data.income.toString());\r",
+							"\r",
+							"// Load the income data from the JSON file\r",
+							"// const data = pm.iterationData.toObject();\r",
+							"\r",
+							"// Extract the income value from the data\r",
+							"// const income = data.income;\r",
+							"\r",
+							"// Modify the request URL to include the income as a query parameter\r",
+							"// const url = `http://24.199.68.169:8081/api/taxBrackets?income=${income}`;\r",
+							"\r",
+							"// // Update the request URL\r",
+							"// pm.request.url.update(url);"
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"// pm.environment.set(\"income\", pm.iterationData.get(\"income\"));//\r",
+							"\r",
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"})\r",
+							"\r",
+							"pm.test(\"API passing Correct tax rate\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    var expectedTaxRate;\r",
+							"    var income = parseFloat(pm.environment.get(\"income\"));\r",
+							"\r",
+							"    if (income > 0 && income < 14001)\r",
+							"        expectedTaxRate = 10.5/100;\r",
+							"    else if (income >= 14000 && income <48001)\r",
+							"        expectedTaxRate = 17.5/100;\r",
+							"    else if (income >= 48001 && income <70001)\r",
+							"        expectedTaxRate = 30/100;\r",
+							"    else if (income >=70001 && income <180001)\r",
+							"        expectedTaxRate = 33/100;\r",
+							"    else\r",
+							"        expectedTaxRate = 39/100;\r",
+							"\r",
+							"    pm.expect(jsonData.taxRate).to.eql(expectedTaxRate);\r",
+							"});\r",
+							"\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://24.199.68.169:8081/api/taxBrackets/{{income}}",
+					"protocol": "http",
+					"host": [
+						"24",
+						"199",
+						"68",
+						"169"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"taxBrackets",
+						"{{income}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Load Test",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"// let currentData = pm.iterationData.toObject();\r",
+							"// pm.variables.set(\"income\", currentData.user_id);\r",
+							"\r",
+							"pm.environment.set(\"income\", pm.iterationData.get(\"income\"));\r",
+							"\r",
+							"// Load the income data from the JSON file\r",
+							"// const data = pm.iterationData.toObject();\r",
+							"\r",
+							"// Set the environment variable \"income\" with the value from the JSON file\r",
+							"// pm.environment.set(\"income\", data.income.toString());\r",
+							"\r",
+							"// Load the income data from the JSON file\r",
+							"// const data = pm.iterationData.toObject();\r",
+							"\r",
+							"// Extract the income value from the data\r",
+							"// const income = data.income;\r",
+							"\r",
+							"// Modify the request URL to include the income as a query parameter\r",
+							"// const url = `http://24.199.68.169:8081/api/taxBrackets?income=${income}`;\r",
+							"\r",
+							"// // Update the request URL\r",
+							"// pm.request.url.update(url);"
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"// pm.environment.set(\"income\", pm.iterationData.get(\"income\"));//\r",
+							"\r",
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"})\r",
+							"\r",
+							"pm.test(\"API passing Correct tax rate\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    var expectedTaxRate;\r",
+							"    var income = parseFloat(pm.environment.get(\"income\"));\r",
+							"\r",
+							"    if (income > 0 && income < 14001)\r",
+							"        expectedTaxRate = 10.5/100;\r",
+							"    else if (income >= 14000 && income <48001)\r",
+							"        expectedTaxRate = 17.5/100;\r",
+							"    else if (income >= 48001 && income <= 70001)\r",
+							"        expectedTaxRate = 30/100;\r",
+							"    else if (income >=70001 && income <= 180001)\r",
+							"        expectedTaxRate = 33/100;\r",
+							"    else\r",
+							"        expectedTaxRate = 39/100;\r",
+							"\r",
+							"    pm.expect(jsonData.taxRate).to.eql(expectedTaxRate);\r",
+							"});\r",
+							"\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://24.199.68.169:8081/api/taxBrackets/{{income}}",
+					"protocol": "http",
+					"host": [
+						"24",
+						"199",
+						"68",
+						"169"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"taxBrackets",
+						"{{income}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Find Tax Bracket for 0",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://24.199.68.169:8081/api/taxBrackets/0",
+					"protocol": "http",
+					"host": [
+						"24",
+						"199",
+						"68",
+						"169"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"taxBrackets",
+						"0"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Find Tax Bracket for 14000",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://24.199.68.169:8081/api/taxBrackets/14000",
+					"protocol": "http",
+					"host": [
+						"24",
+						"199",
+						"68",
+						"169"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"taxBrackets",
+						"14000"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Find Tax Bracket for 14001",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://24.199.68.169:8081/api/taxBrackets/14001",
+					"protocol": "http",
+					"host": [
+						"24",
+						"199",
+						"68",
+						"169"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"taxBrackets",
+						"14001"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Find Tax Bracket for 48000",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://24.199.68.169:8081/api/taxBrackets/48000",
+					"protocol": "http",
+					"host": [
+						"24",
+						"199",
+						"68",
+						"169"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"taxBrackets",
+						"48000"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Find Tax Bracket for 48001",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://24.199.68.169:8081/api/taxBrackets/48001",
+					"protocol": "http",
+					"host": [
+						"24",
+						"199",
+						"68",
+						"169"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"taxBrackets",
+						"48001"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Find Tax Bracket for 70000",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://24.199.68.169:8081/api/taxBrackets/70000",
+					"protocol": "http",
+					"host": [
+						"24",
+						"199",
+						"68",
+						"169"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"taxBrackets",
+						"70000"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Find Tax Bracket for 70001",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://24.199.68.169:8081/api/taxBrackets/70001",
+					"protocol": "http",
+					"host": [
+						"24",
+						"199",
+						"68",
+						"169"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"taxBrackets",
+						"70001"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Find Tax Bracket for 180000",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://24.199.68.169:8081/api/taxBrackets/180000",
+					"protocol": "http",
+					"host": [
+						"24",
+						"199",
+						"68",
+						"169"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"taxBrackets",
+						"180000"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Find Tax Bracket for 180001",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://24.199.68.169:8081/api/taxBrackets/180001",
+					"protocol": "http",
+					"host": [
+						"24",
+						"199",
+						"68",
+						"169"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"taxBrackets",
+						"180001"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Find Tax Bracket for -1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://24.199.68.169:8081/api/taxBrackets/-1",
+					"protocol": "http",
+					"host": [
+						"24",
+						"199",
+						"68",
+						"169"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"taxBrackets",
+						"-1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Tax amount when income is 0",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Your test name\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.owningTax).to.eql(0);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"income\":0\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://24.199.68.169:8081/api/calculateTax",
+					"protocol": "http",
+					"host": [
+						"24",
+						"199",
+						"68",
+						"169"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"calculateTax"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Invalide URL",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"income\":0\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://24.199.68.169:8081/api/calculateTax",
+					"protocol": "http",
+					"host": [
+						"24",
+						"199",
+						"68",
+						"169"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"calculateTax"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "valide URL",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"income\":0\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://24.199.68.169:8081/api/calculateTax",
+					"protocol": "http",
+					"host": [
+						"24",
+						"199",
+						"68",
+						"169"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"calculateTax"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Tax amount when income is -1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"income\":0\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://24.199.68.169:8081/api/calculateTax",
+					"protocol": "http",
+					"host": [
+						"24",
+						"199",
+						"68",
+						"169"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"calculateTax"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Tax amount when income is 14000",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"pm.test(\"owningTax\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.owningTax).to.eql(1470);",
+							"    ",
+							"});",
+							"",
+							"pm.test(\"taxRate\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.taxRate).to.eql(10.5);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"income\":14000\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://24.199.68.169:8081/api/calculateTax",
+					"protocol": "http",
+					"host": [
+						"24",
+						"199",
+						"68",
+						"169"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"calculateTax"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Tax amount when income is 14001",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"pm.test(\"owningTax\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.owningTax).to.eql(2450.17);",
+							"    ",
+							"});",
+							"",
+							"pm.test(\"taxRate\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.taxRate).to.eql(17.5);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"income\":14001\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://24.199.68.169:8081/api/calculateTax",
+					"protocol": "http",
+					"host": [
+						"24",
+						"199",
+						"68",
+						"169"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"calculateTax"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Tax amount when income is 48000",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"pm.test(\"owningTax\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.owningTax).to.eql(8400);",
+							"    ",
+							"});",
+							"",
+							"pm.test(\"taxRate\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.taxRate).to.eql(17.5);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"income\":48000\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://24.199.68.169:8081/api/calculateTax",
+					"protocol": "http",
+					"host": [
+						"24",
+						"199",
+						"68",
+						"169"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"calculateTax"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Tax amount when income is 48001",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"pm.test(\"owningTax\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.owningTax).to.eql(14400.3);",
+							"    ",
+							"});",
+							"",
+							"pm.test(\"taxRate\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.taxRate).to.eql(30);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"income\":48001\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://24.199.68.169:8081/api/calculateTax",
+					"protocol": "http",
+					"host": [
+						"24",
+						"199",
+						"68",
+						"169"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"calculateTax"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Tax amount when income is 70000",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"pm.test(\"owningTax\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.owningTax).to.eql(21000);",
+							"    ",
+							"});",
+							"",
+							"pm.test(\"taxRate\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.taxRate).to.eql(30);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"income\":70000\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://24.199.68.169:8081/api/calculateTax",
+					"protocol": "http",
+					"host": [
+						"24",
+						"199",
+						"68",
+						"169"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"calculateTax"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Tax amount when income is 70001",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"pm.test(\"owningTax\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.owningTax).to.eql(23100.33);",
+							"    ",
+							"});",
+							"",
+							"pm.test(\"taxRate\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.taxRate).to.eql(33);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"income\":70001\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://24.199.68.169:8081/api/calculateTax",
+					"protocol": "http",
+					"host": [
+						"24",
+						"199",
+						"68",
+						"169"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"calculateTax"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Tax amount when income is 180000",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"pm.test(\"owningTax\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.owningTax).to.eql(59400);",
+							"    ",
+							"});",
+							"",
+							"pm.test(\"taxRate\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.taxRate).to.eql(33);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"income\":180000\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://24.199.68.169:8081/api/calculateTax",
+					"protocol": "http",
+					"host": [
+						"24",
+						"199",
+						"68",
+						"169"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"calculateTax"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Tax amount when income is 180001",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"pm.test(\"owningTax\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.owningTax).to.eql(70200.39);",
+							"    ",
+							"});",
+							"",
+							"pm.test(\"taxRate\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.taxRate).to.eql(39);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"income\":180001\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://24.199.68.169:8081/api/calculateTax",
+					"protocol": "http",
+					"host": [
+						"24",
+						"199",
+						"68",
+						"169"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"calculateTax"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Tax calculation for lower and upper boundaries",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.environment.set(\"income\", pm.iterationData.get(\"income\"));\r",
+							"\r",
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"pm.environment.set(\"income\", pm.iterationData.get(\"income\"));"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "file",
+					"file": {}
+				},
+				"url": {
+					"raw": "http://24.199.68.169:8081/api/calculateTax",
+					"protocol": "http",
+					"host": [
+						"24",
+						"199",
+						"68",
+						"169"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"calculateTax"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Validate results from API for boundry values",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"pm.environment.set(\"income\", pm.iterationData.get(\"income\"));"
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.environment.set(\"income\", pm.iterationData.get(\"income\"));\r",
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"// correct Tax rate\r",
+							"pm.test(\"API passing Correct tax rate\",function(){\r",
+							"\r",
+							"var jsonData = pm.response.json();\r",
+							"var expectedTaxRate;\r",
+							"var income=parseFloat(pm.iterationData.get(\"income\"));\r",
+							"\r",
+							"if( income>0 && income<14001)\r",
+							"    expectedTaxRate=10.5;\r",
+							"\r",
+							"else if(income>=14001 && income<48001)\r",
+							"    expectedTaxRate=17.5;\r",
+							"  \r",
+							"else if (income>=48001 && income<70001)\r",
+							"    expectedTaxRate=30;\r",
+							"\r",
+							"else if (income>=70001 && income<180001)\r",
+							"    expectedTaxRate=33;\r",
+							"        \r",
+							"else\r",
+							"    expectedTaxRate=39;\r",
+							"\r",
+							"\r",
+							"pm.expect(jsonData.taxRate).to.eql(expectedTaxRate);\r",
+							"});\r",
+							"\r",
+							"// correct Tax amount as income entered\r",
+							"\r",
+							"pm.test(\"API passing Correct owning Tax\",function(){\r",
+							"\r",
+							"var jsonData = pm.response.json();\r",
+							"var expectedTaxRate;\r",
+							"var taxRateAsDecimal= jsonData.taxRate/100;\r",
+							"var income=parseFloat(pm.iterationData.get(\"income\"));\r",
+							"\r",
+							"expectedOwnTax=income*taxRateAsDecimal;\r",
+							"\r",
+							"   // Round expectedOwnTax to two decimal places\r",
+							"    expectedOwnTax = parseFloat(expectedOwnTax.toFixed(2));\r",
+							"pm.expect(jsonData.owningTax).to.eql(expectedOwnTax);\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"income\": {{income}}\r\n    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://24.199.68.169:8081/api/calculateTax",
+					"protocol": "http",
+					"host": [
+						"24",
+						"199",
+						"68",
+						"169"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"calculateTax"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Test ALL",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"pm.environment.set(\"income\", pm.iterationData.get(\"income\"));"
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.environment.set(\"income\", pm.iterationData.get(\"income\"));\r",
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"income\": {{income}}\r\n    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://24.199.68.169:8081/api/calculateTax",
+					"protocol": "http",
+					"host": [
+						"24",
+						"199",
+						"68",
+						"169"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"calculateTax"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
