@@ -318,10 +318,10 @@ This sprint full filled with rigorous testing, advanced tools, and dynamic envir
 Test plans and Impact analysis 
 : 
 
-- [Impact Analysis]()
-- [**Sprint 1:** Test plan]()
-- [**Sprint 2:** Test plan]()
-- [**Sprint 3:** Test plan]()
+- [Impact Analysis](https://github.com/Mithila-Kuda/TaxCalUIAutomation/blob/main/Assets/impact%20analysis.jpg)
+- [**Sprint 1:** Test plan](https://github.com/Mithila-Kuda/TaxCalUIAutomation/blob/main/Assets/Test%20plan%201.jpg)
+- [**Sprint 2:** Test plan](https://github.com/Mithila-Kuda/TaxCalUIAutomation/blob/main/Assets/Test%20plan%202.jpg)
+- [**Sprint 3:** Test plan](https://github.com/Mithila-Kuda/TaxCalUIAutomation/blob/main/Assets/Test%20plan%203.jpg)
 
 Test analysis and design
 : 
