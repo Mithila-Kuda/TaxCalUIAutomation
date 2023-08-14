@@ -56,7 +56,7 @@ By adopting the **Attribute, Component, and Capability** (ACC) testing approach,
 
 ### Unit testing
 
-[UI Component Test Suit](https://techdojob2.atlassian.net/projects/QTC?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page#!/v2/testCases?projectId=10003)
+[UI Component Test Suit](https://github.com/Mithila-Kuda/TaxCalUIAutomation/blob/main/Assets/UI%20test%20cases.png)
 
 Unit testing  focuses on testing individual units or components of the software in isolation.
 The goal is to verify that each unit works as expected.Unit testing is highly valuable for detecting and fixing defects early in the development cycle.
@@ -72,7 +72,7 @@ In the Tax Calculator there are for 4 unit been considered as MVP. Input field, 
 
 ### Integration testing
 
-[API Test Suit](https://techdojob2.atlassian.net/projects/QTC?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page#!/v2/testCases?projectId=10003)
+[API Test Suit](https://github.com/Mithila-Kuda/TaxCalUIAutomation/blob/main/Assets/Income%20Tax%20Calculation-API-Test%20analysis%20and%20design.pdf)
 
 API testing is a crucial aspect of ensuring the functionality, reliability, and security of the Tax Calculator application.
 As the Tax Calculator involves user interactions and data processing,
@@ -119,7 +119,7 @@ There are some testing considered while conducting the Tax Calculator API testin
 
 ### System testing
 
-[System Test Suit](https://techdojob2.atlassian.net/projects/QTC?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page#!/v2/testCases?projectId=10003)
+[System Test Suit](https://github.com/Mithila-Kuda/TaxCalUIAutomation/blob/main/Assets/System%20test%20cases.png)
 
 System testing for the Tax Calculator involves evaluating the entire application as a whole to ensure that it functions correctly and meets all the specified requirements.
 Our main objective was to test the integrated system components and their interactions to verify that the Tax Calculator works seamlessly from end to end. 
@@ -315,7 +315,7 @@ Test analysis and design
 
 - [Income Tax Calculation-UI-Test analysis and design](https://docs.google.com/document/d/1RmNcYZimInADYbaS5WCcUtNw1NeDR47olZXLoImyVE8/edit)
 - [Income Tax Calculation-API-Test analysis and design](https://github.com/Mithila-Kuda/TaxCalUIAutomation/blob/main/Assets/Income%20Tax%20Calculation-API-Test%20analysis%20and%20design.pdf)
-- [Income Tax Calculation-System-Test analysis and design](https://docs.google.com/document/d/1RmNcYZimInADYbaS5WCcUtNw1NeDR47olZXLoImyVE8/edit)
+- [Income Tax Calculation-System-Test analysis and design](https://github.com/Mithila-Kuda/TaxCalUIAutomation/blob/main/Assets/Test%20analysis%20and%20design-%20System.pdf)
 
 Test suits
 : 
@@ -340,8 +340,8 @@ Our agile approach isn't just about counting points; it's about being adaptable 
 >The following **Burnup reports** provide insights into the progress made during Sprint 1 and Sprint 2.
 These showcase a clear overview of the tasks completed and the accomplishments over each sprint.
 
-![Burndownchart](/Assets/Burnup%20report%20Sprint%201.png)
-![Burndownchart](/Assets/Burnup%20report%20Sprint%202.png)
+![Burnupchart sprint 1](/Assets/Burnup%20report%20Sprint%201.png)
+![Burnupchart sprint 1](/Assets/Burnup%20report%20Sprint%202.png)
 <!-- ----------------------------------------------------------------------------------------------------------------- -->
 # DEFECT MANAGEMENT
 
@@ -354,5 +354,5 @@ Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolor
 
 At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.
 
-![mtk](https://img.shields.io/badge/Tax_Calculator-Mithila_Kuda-orange) (https://google.com)
+![mtk](https://img.shields.io/badge/Tax_Calculator-Mithila_Kuda-orange)
 
