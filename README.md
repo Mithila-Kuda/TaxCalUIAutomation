@@ -320,9 +320,9 @@ Test analysis and design
 Test suits
 : 
 
-- [UI Component Test Suit](https://techdojob2.atlassian.net/projects/QTC?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page#!/v2/testCases?projectId=10003)
-- [API Test Suit](https://techdojob2.atlassian.net/projects/QTC?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page#!/v2/testCases?projectId=10003)
-- [System Test Suit](https://techdojob2.atlassian.net/projects/QTC?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page#!/v2/testCases?projectId=10003)
+- [UI Component Test Suit](https://github.com/Mithila-Kuda/TaxCalUIAutomation/blob/main/Assets/UI%20test%20cases.png)
+- [API Test Suit](https://github.com/Mithila-Kuda/TaxCalUIAutomation/blob/main/Assets/API%20test%20cases.png)
+- [System Test Suit](https://github.com/Mithila-Kuda/TaxCalUIAutomation/blob/main/Assets/System%20test%20cases.png)
 
 
 
