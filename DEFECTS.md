@@ -1,11 +1,11 @@
 # Defect Reports
-- [The input field accept multiple decimals]()
-- [The input field accept negative decimals]()
-- [The find tax bracket endpoint did not retrieve tax percentage for minimum income values]()
-- [Negative Input Accepted by Find Tax Bracket Endpoints]()
-- [Negative Input gives internal server error when calculating Tax]()
-- [In the summary report 'Total tax to be paid' display more than two decimal places]()
-- [For the  inserted income '$14,000.50', instead of showing the summary report with the 'Total Tax to be paid', displaying an error message "An error occurred while calculating tax."]()
+- [The input field accept multiple decimals](#the-input-field-accept-multiple-decimals)
+- [The input field accept negative decimals](#the-input-field-accept-negative-decimals)
+- [The find tax bracket endpoint did not retrieve tax percentage for minimum income values](#the-find-tax-bracket-endpoint-did-not-retrieve-tax-percentage-for-minimum-income-values)
+- [Negative Input Accepted by Find Tax Bracket Endpoints](#negative-input-accepted-by-find-tax-bracket-endpoints)
+- [Negative Input gives internal server error when calculating Tax](#negative-input-gives-internal-server-error-when-calculating-tax)
+- [In the summary report 'Total tax to be paid' display more than two decimal places](#in-the-summary-report-total-tax-to-be-paid-display-more-than-two-decimal-places)
+- [For the  inserted income '$14,000.50', instead of showing the summary report with the 'Total Tax to be paid', displaying an error message "An error occurred while calculating tax."](#for-the--inserted-income-1400050-instead-of-showing-the-summary-report-with-the-total-tax-to-be-paid-displaying-an-error-message-an-error-occurred-while-calculating-tax)
 
 ## The input field accept multiple decimals
 ![Defect report](/Assets/Defect%20reports/The%20input%20field%20accept%20multiple%20decimals.png)
