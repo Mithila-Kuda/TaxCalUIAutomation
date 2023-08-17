@@ -1,3 +1,4 @@
+![mtk](https://img.shields.io/badge/Tax_Calculator-Mithila_Kuda-orange)
 # INDEX
 
 - [PROJECT DESCRIPTION](#project-description)
@@ -16,6 +17,11 @@
        
 - [AGILE METRICS](#agile-metrics)
 - [DEFECT MANAGEMENT](#defect-management)
+- [TEST EXIT REPORT](#test-exit-report)
+- [TOOLS](#tools)
+  - [POSTMAN](#postman)
+  - [CUCUMBER](#cucumber)
+  - [JENKINS](#jenkins)
 
 
 
@@ -367,10 +373,77 @@ However, the actual result differed from our expectations. Instead of the antici
 
 <!-- ----------------------------------------------------------------------------------------------------------------- -->
 # TEST EXIT REPORT
-At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.
+
+>Note:<br/>
+> Consider API testing
+>
+During the testing phase of the Tax Calculator API, we diligently executed a comprehensive series of tests to ensure the accuracy and reliability of the application. The test execution yielded valuable insights, summarized below:
+
+**Defects:** A total of 26 test cases were executed. Of these, 4 tests failed to produce the expected outcomes, while another 4 were blocked due to unforeseen issues. On a positive note, 18 tests passed successfully, leaving no tests pending for resolution.
+
+**Outstanding Defects:** One significant defect was identified in the application. Specifically, the "Find Tax Bracket" endpoint failed to retrieve the accurate tax percentage for minimum income values. To address this, a corrective action has been assigned to Rafael for deploying the necessary fix.
+
+To enhance transparency and provide a visual representation of our testing progress, we generated three test progress reports, each focusing on a specific endpoint of the application:
+
+- Finding Correct Tax Brackets Endpoint Report
+- Calculating Tax Endpoint Report
+- Retrieving Tax Brackets Endpoint Report
+
+These reports showcase the comprehensive nature of our testing efforts, demonstrating our commitment to ensuring the Tax Calculator's accuracy and functionality. As we move forward, these insights will contribute to our project report, highlighting our thorough approach and dedication to delivering a robust and reliable tax calculation solution.
+
 
 
 
 ![test exit report ](/Assets/screencapture-mail-google-mail-u-0-2023-08-15-02_06_08.png)
-![mtk](https://img.shields.io/badge/Tax_Calculator-Mithila_Kuda-orange)
 
+
+# TOOLS
+
+## Postman
+<div style="display: flex; justify-content: ;align-items: center; margin: 0;">
+     <img src="Assets/postman-inc-logo-vector.png" alt="Image 2" style="height: 100px; margin: 0px;">
+
+</div>
+
+Postman played a pivotal role in validating the functionality and accuracy of our Tax Calculator application. With its user-friendly interface, Postman allowed us to interact with the Tax Calculator's API, sending various inputs and observing how the system responded. This dynamic interaction mimics real-world scenarios, ensuring that the Tax Calculator performs reliably under different conditions.
+
+By meticulously crafting and executing requests through Postman, we thoroughly tested each aspect of the Tax Calculator's API, from data input and calculation to error handling and response validation. Postman's ability to capture and present responses in an organized format simplified the identification of discrepancies between expected and actual outcomes.
+
+Additionally, Postman's collection runner feature enabled us to perform comprehensive and repeatable tests, validating the Tax Calculator's accuracy and responsiveness across multiple iterations. This capability proved invaluable in ensuring that our application consistently delivered accurate tax calculations and a smooth user experience.
+
+Incorporating Postman into our development process not only expedited our testing efforts but also fortified our confidence in the Tax Calculator's functionality. Its contribution in facilitating rigorous and reliable testing is a testament to its significance within our project.
+
+
+
+## Cucumber
+
+<div style="display: flex; justify-content: ;align-items: center; margin: 0;">
+     <img src="Assets/0_6T0D8OjInvZhyHDE.png" alt="Image 2" style="height: 100px; margin: 0px;">
+   
+</div>
+
+
+While testing the tax calculator, we employed a powerful tool called Cucumber to ensure the accuracy and reliability of our software. Cucumber acts as a bridge between our team of developers and non-developers, facilitating effective communication and validation of the software's functionality.
+
+Cucumber allows us to describe how the Tax Calculator should work in plain, everyday language that everyone can understand - this is often referred to as "business language." Instead of technical jargon, we use words that anyone can relate to, just like having a conversation. Cucumber listens to this conversation and translates it into a set of tests that the computer can understand.
+
+Once the tests are created, Cucumber goes to work by "talking" to the Tax Calculator, making sure it follows the script we discussed. After the interaction, Cucumber generates a detailed report, like a report card, which shows us how well the Tax Calculator performed. This report highlights any discrepancies between what we expected and what actually happened. If there's an error, the report pinpoints the exact location, enabling our developers to swiftly address the issue.
+
+By using Cucumber, we ensure that our Tax Calculator not only meets technical standards but also aligns perfectly with the user's needs and expectations. This collaborative tool strengthens our development process, fosters clear communication, and enhances the reliability of our software.
+
+![Cucumber report](/Assets/Tax%20calculator-%20Cucumber%20report.png)
+## Jenkins
+
+<div style="display: flex; justify-content: ;align-items: center; margin: 0;">
+     <img src="Assets/jenkins8460.jpg" alt="Image 2" style="height: 100px; margin: 0px;">
+
+</div>
+
+Jenkins enabled us to streamline repetitive tasks, ensuring consistent and reliable execution. For our Tax Calculator, Jenkins played a pivotal role in automating the process of building, testing, and deploying our application.
+
+Through Jenkins, we established an automated pipeline that seamlessly integrated different components of our Tax Calculator, ensuring that changes were rigorously tested before being deployed. This integration encompassed a series of automated steps, including code compilation, unit testing, and even user interface and API testing, thereby reducing the risk of errors and discrepancies.
+
+![Jenkins 1.png](/Assets/Jenkins%201.png)
+![Jenkins 2.png](/Assets/Jenkins%202.png)
+
+![mtk](https://img.shields.io/badge/Tax_Calculator-Mithila_Kuda-orange)
